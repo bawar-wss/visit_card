@@ -40,6 +40,51 @@ class MyApp extends StatelessWidget {
                     color: Colors.blue[100],
                   ),
                 ),
+                Container(
+                  color: Colors.white,
+                  margin: const EdgeInsets.symmetric(
+                      horizontal: 10.0, vertical: 20.0),
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal,
+                      ),
+                      Text(
+                        '+964 750 461 2918',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal,
+                          fontFamily: 'Source Sans Pro',
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  color: Colors.white,
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 10.0,
+                  ),
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                    children: const [
+                      Icon(
+                        Icons.email,
+                        color: Colors.teal,
+                      ),
+                      Text(
+                        'bawar.wss@gmail.com',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.teal,
+                          fontFamily: 'Source Sans Pro',
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
