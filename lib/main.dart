@@ -14,79 +14,94 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Center(
-            child: Column(
-              children: [
-                const CircleAvatar(
-                  radius: 50,
-                  backgroundImage: AssetImage('assets/images/profileb2.jpg'),
-                ),
-                const Text(
-                  'Bawar W. Saber',
-                  style: TextStyle(
-                    fontFamily: 'Pacifico',
-                    fontSize: 40,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                Text(
-                  'FLUTTER DEVELOPER',
-                  style: TextStyle(
-                    letterSpacing: 3,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Source Sans Pro',
-                    fontSize: 20,
-                    color: Colors.blue[100],
-                  ),
-                ),
-                Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const CircleAvatar(
+                radius: 100,
+                backgroundImage: AssetImage('assets/images/profileb2.jpg'),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'Bawar W. Saber',
+                style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 40,
                   color: Colors.white,
-                  margin: const EdgeInsets.symmetric(
-                      horizontal: 10.0, vertical: 20.0),
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    children: const [
-                      Icon(
-                        Icons.phone,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  letterSpacing: 3,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20,
+                  color: Colors.blue[100],
+                ),
+              ),
+              SizedBox(
+                height: 30,
+                width: 200,
+                child: Divider(
+                  color: Colors.blue[100],
+                ),
+              ),
+              const Card(
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '+964 750 461 2918',
+                      style: TextStyle(
+                        fontSize: 20,
                         color: Colors.teal,
+                        fontFamily: 'Source Sans Pro',
                       ),
-                      Text(
-                        '+964 750 461 2918',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                        ),
-                      )
-                    ],
+                    ),
+                  )),
+              const Card(
+                margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'bawar.wss@gmail.com',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.teal,
+                      fontFamily: 'Source Sans Pro',
+                    ),
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  margin: const EdgeInsets.symmetric(
-                    horizontal: 10.0,
+              ),
+              const Card(
+                margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.send,
+                    color: Colors.teal,
                   ),
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    children: const [
-                      Icon(
-                        Icons.email,
-                        color: Colors.teal,
-                      ),
-                      Text(
-                        'bawar.wss@gmail.com',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                        ),
-                      )
-                    ],
+                  title: Text(
+                    't.me/Bawar.XIII',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.teal,
+                      fontFamily: 'Source Sans Pro',
+                    ),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
