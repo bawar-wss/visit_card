@@ -51,22 +51,22 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const Card(
-                  margin:
-                      EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.phone,
+                margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+964 750 461 2918',
+                    style: TextStyle(
+                      fontSize: 20,
                       color: Colors.teal,
+                      fontFamily: 'Source Sans Pro',
                     ),
-                    title: Text(
-                      '+964 750 461 2918',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.teal,
-                        fontFamily: 'Source Sans Pro',
-                      ),
-                    ),
-                  )),
+                  ),
+                ),
+              ),
               const Card(
                 margin: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
                 child: ListTile(
