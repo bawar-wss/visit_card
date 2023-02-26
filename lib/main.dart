@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    '+964 750 461 2918',
+                    '+1 234 567 8910',
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.teal,
@@ -75,7 +75,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    'bawar.wss@gmail.com',
+                    'bawar.flutter@gmail.com',
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.teal,
@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    't.me/Bawar.XIII',
+                    't.me/Bawar.flutter',
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.teal,
